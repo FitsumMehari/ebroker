@@ -5,7 +5,7 @@ const verifyToken = (req, res, next) => {
     if (!token) {
         return res.status(401).send("Access denied. No token provided.");
     }
-    jwt.verify(token, "secretkey", (err, decoded) => {
+    jwt.verify(token.split(" ")[1], "secretkey", (err, decoded) => {
         if (err) {
             return res.status(401).send("Invalid token");
         }
