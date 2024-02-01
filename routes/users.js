@@ -9,6 +9,8 @@ var router = express.Router();
 // User Registration
 router.post("/register", async(req, res) => {
     const { username, password } = req.body;
+    const userExists = await User.findOne({ username });
+    if (userExists) res.status(401).send("Username is taken");
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = new User({ username, password: hashedPassword });
     await user.save();
