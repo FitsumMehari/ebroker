@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 const usersRoute = require("./routes/users");
 const itemsRoute = require("./routes/items");
@@ -15,6 +16,7 @@ const dbURI = process.env.DB_URI;
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 // Connect to MongoDB
 mongoose
