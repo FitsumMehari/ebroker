@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/items
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzA2NDYyNjQyfQ.kQUSL1jGbvsd2vGlW3KqiJuLYELYMIFHfcguzRZmdpI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzA2Nzk3Njk1fQ.jgAoef9eBZL5iN5NauElt93aIo6TvsTtvslL33pdNbM
 Content-Type: application/json
 
 {
