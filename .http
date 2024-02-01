@@ -27,12 +27,12 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/items
-Authorization: Bearer {{token}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5fZG9lIiwiaWF0IjoxNzA2NDYyNjQyfQ.kQUSL1jGbvsd2vGlW3KqiJuLYELYMIFHfcguzRZmdpI
 Content-Type: application/json
 
 {
-  "name": "New Item",
-  "description": "Description of the new item"
+ "name": "New Item",
+ "description": "Description of the new item"
 }
 
 ###
@@ -40,13 +40,13 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/items
-Authorization: Bearer {{token}}
+Authorization: Bearer token
 
 ###
 # Update Item
 ###
-PUT http://localhost:3000/items/{{itemId}}
-Authorization: Bearer {{token}}
+PUT http://localhost:3000/items/itemId
+Authorization: Bearer token
 Content-Type: application/json
 
 {
@@ -58,5 +58,5 @@ Content-Type: application/json
 # Delete Item
 ###
 
-DELETE http://localhost:3000/items/{{itemId}}
-Authorization: Bearer {{token}}
+DELETE http://localhost:3000/items/itemId
+Authorization: Bearer token
